@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #FF4E00;  /* Naranja brillante para energía y emoción */
+    --secondary-color: #007BFF;  /* Azul intenso para representar el cielo y el agua */
+    --accent-color: #FFD100;  /* Amarillo vibrante para destacar y resaltar */
+    --accent2-color: #8C00FF;  /* Púrpura audaz para un toque de misterio y aventura */
+    --heading-font: 'Overpass', sans-serif;
+    --paragraph-font: 'Barlow', sans-serif;
+    --navigation-bg-color: #1A1A1A;  /* Negro sólido para un fondo llamativo */
+    --navigation-link-color: #FFFFFF;  /* Blanco para enlaces visibles en el fondo oscuro */
+    --navigation-hover-link-color: #FFD100;  /* Amarillo al destacar enlaces */
+    --navigation-hover-bg-color: #333333;  /* Gris oscuro al resaltar enlaces */
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    padding: var(--header-padding);
+}
+
+p {
+    padding: 10px; 
+}
+
+nav {
+    background-color: var(--navigation-bg-color);
+    padding: 10px; 
+}
+
+nav a {
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 8px 15px; 
+    margin: 0 10px; 
+    border-radius: 5px; 
+}
+
+nav a:hover {
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-bg-color);
+}
