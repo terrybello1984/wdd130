@@ -1,0 +1,97 @@
+/* rafting.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #FE5F55;
+    --secondary-color: #F0B67F;
+    --accent1-color: #D6D1B1;
+    --accent2-color: #C7EFCF;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente según sea necesario */
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Color de fondo general */
+    color: #333; /* Color de texto predeterminado */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color); /* Color de texto para títulos */
+}
+
+p {
+    color: #555; /* Color de texto para párrafos */
+}
+
+header {
+    background-color: var(--accent1-color); /* Color de fondo del encabezado */
+    padding: 10px;
+    text-align: left;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img.background-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo del contenido del héroe con opacidad */
+    padding: 20px;
+    max-width: 80%;
+}
+
+.hero-content h1 {
+    color: var(--secondary-color); /* Color de texto del título del héroe */
+}
+
+.hero-content article {
+    position: relative;
+}
+
+.hero-content article img {
+    float: right;
+    max-width: 40%; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-left: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+footer {
+    background-color: var(--accent1-color); /* Color de fondo del pie de página */
+    padding: 20px;
+    text-align: center;
+}
+
+footer img {
+    margin: 0 5px; /* Espaciado entre los iconos de redes sociales */
+}
+section img {
+    width: 800px; /* Establecer el ancho deseado */
+    height: auto; /* Mantener la proporción de la imagen */
+}
