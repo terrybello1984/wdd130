@@ -1,25 +1,38 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Heading Styles */
 h1 {
   text-align: center;
-  color: lightblue;
+  color: #4a90e2;
+  border-bottom: 2px solid steelblue; /* Add bottom border */
 }
 
+/* Navigation Styles */
 nav {
   background-color: steelblue;
   padding: 10px;
+  display: flex; /* Apply flexbox */
+  justify-content: space-evenly; /* Evenly space the items */
+  align-items: center; /* Center items vertically */
 }
 
 nav a {
   color: white;
-  display: block;
-  padding: 20px;
+  display: block; /* Change to block element */
+  padding: 10px 20px; /* Add padding */
+  text-decoration: none; /* Remove underline */
 }
 
+nav a:hover {
+  background-color: #4a90e2; /* Change background color on hover */
+}
+
+/* Image Styles */
 img {
   width: 150px;
   height: auto;
@@ -28,24 +41,44 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
+/* Paragraph Styles */
 p {
   padding: 10px;
   margin: 0; /* Reset margin */
 }
 
-main {
+/* Container Styles */
+header, .grid, footer { /* Add .grid selector here */
   max-width: 840px;
+  margin: 0 auto; /* This centers the content horizontally */
 }
 
+/* Main Content Styles */
+main {
+  grid-column: 2/3;
+  margin: 1rem; /* This centers the main content horizontally */
+}
+
+/* Grid Layout Styles */
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr; /* Define two columns, aside on the left (1fr) and main on the right (2fr) */
+}
+
+/* Aside Styles */
 aside {
   position: relative;
-  width: 300px;
+  width: 20rem;
   margin: 10px;
   padding: 15px;
   background-color: #f0f0f0;
   color: #333;
+  grid-column: 1/2;
+  grid-row: 1/2; /* Place the aside in the first row */
 }
 
+/* Title on Image Styles */
 .title-on-image {
   position: absolute;
   top: 20px;
@@ -57,6 +90,7 @@ aside {
   border-radius: 5px;
 }
 
+/* Profile Description Styles */
 aside img {
   width: 200%; /* Increase image size */
   height: auto;
@@ -67,13 +101,14 @@ p.profile-description {
   padding-left: 20px;
 }
 
+/* Footer Styles */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
 }
 
-/* Class Selectors */
+/* Box Styles */
 .box {
   margin: 1rem;
   padding: 1rem;
@@ -81,19 +116,20 @@ footer {
   color: darkslategray;
 }
 
-/* Float profile image to the right */
+/* Profile Image Styles */
 img.profile-img {
   float: right;
-  margin-left: 20px;
-  margin-top: -10px; /* Move the image up */
+  margin-left: 10px;
+  margin-top: 20px; /* Move the image up */
 }
 
-/* Clear float for paragraphs after the floated image */
+/* Clear Float Styles */
 p.profile-description {
   overflow: hidden;
   padding-left: 20px;
 }
 
+/* Aside Heading Styles */
 aside h2 {
   position: absolute;
   top: 0;
@@ -101,3 +137,35 @@ aside h2 {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px;
 }
+
+/* Temples Container Styles */
+.temples-container {
+  margin-top: -60px; /* Move up */
+  margin-right: 300px; /* Move slightly to the right */
+  margin-left: 700px; /* Move slightly to the left */
+  margin-bottom: 20px; /* Add space at the bottom */
+}
+
+/* Box Styles */
+.box {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 10px; /* Add space between items */
+  padding: 10px; /* Add padding */
+  background-color: lightgray; /* Background color */
+  border-radius: 10px; /* Add rounded borders */
+  padding-left: 20px; /* Add left padding */
+}
+
+/* List Item Styles */
+
+.profile-container {
+  overflow: hidden; /* Clear floats */
+  margin-right: 10px;
+  }
+
+.profile-img {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Space between the image and the text */
+}
+

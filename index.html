@@ -20,10 +20,16 @@
                 <a href="https://www.facebook.com/terry.bello/" target="_blank">Facebook</a>
             </nav>
         </header>      
-        <main>
-            <h1>Terry Bello | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Hello, my name is Terry Bello" width="200" class="profile-img">
-            <p class="profile-description">Hello! My name is Terry Bello and I am from Venezuela, but I lived in Ecuador for 7 years and now I have lived for two years in São Paulo Brazil. I am 39 years old, and I am a logistics and supply administrator. And now I want to change careers and develop myself in the world of technology. I am a passionate professional in programming and cybersecurity. I bring experience in fraud prevention and enhancing customer satisfaction in digital advertising. Additionally, I have a background in warehouse management and logistics, excelling in operational efficiency. Fluent in English, Spanish, and Portuguese, I specialize in customer support, problem-solving, and time management. Let's connect to explore how my versatility and skills can contribute to your team.</p>
+        <div class="grid"> <!-- Encase main and aside elements within a div with class "grid" -->
+            <main>
+                <h1>Terry Bello | WDD 130</h1>
+                <div class="profile-container">
+                    <img src="images/profile.jpg" alt="Hello, my name is Terry Bello" width="200" class="profile-img">
+                    <div>
+                      <p class="profile-description">Hello! My name is Terry Bello and I am from Venezuela, but I lived in Ecuador for 7 years and now I have lived for two years in São Paulo Brazil. I am 39 years old, and I am a logistics and supply administrator. And now I want to change careers and develop myself in the world of technology. I am a passionate professional in programming and cybersecurity. I bring experience in fraud prevention and enhancing customer satisfaction in digital advertising. Additionally, I have a background in warehouse management and logistics, excelling in operational efficiency. Fluent in English, Spanish, and Portuguese, I specialize in customer support, problem-solving, and time management. Let's connect to explore how my versatility and skills can contribute to your team.</p>
+                    </div>
+                </div>                                   
+            </main>
             <aside class="box">
                 <h2 class="title-on-image">São Paulo</h2>
                 <img src="images/Brazil.jpg" alt="São Paulo State" style="width: 100%;"> <!-- Increase width to 100% -->
@@ -32,16 +38,19 @@
                                 
                     The economic landscape of São Paulo is characterized by its robustness and diversity, hosting the largest industrial, scientific, and technological production in the country.
                 </p>
-            </aside>          
+            </aside> 
+        </div>     
+        <div class="temples-container">
             <ul class="box">
                 <li><a href="https://www.churchofjesuschrist.org/temples/details/brasil-sao-paulo-temple?lang=eng" target="_blank">São Paulo Brazil Temple</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/temples/details/quito-ecuador-temple?lang=eng" target="_blank">Quito Ecuador Temple</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/temples/details/barranquilla-colombia-temple?lang=eng" target="_blank">Barranquilla Colombia Temple</a></li>
             </ul>
-        </main>
+        </div>       
         <footer>
             <p>©️2024 🪇 Terry Bello 🪇 São Paulo, Brazil</p>
         </footer>
-        <!-- Last modified: March 14, 2024 -->
+        <!-- Last modified: March 23, 2024 -->
     </body>
 </html>
+
