@@ -8,43 +8,69 @@
     --secondary-color: #F0B67F;
     --accent1-color: #D6D1B1;
     --accent2-color: #C7EFCF;
+    --border-color: #ccc; /* Color for borders */
+    --background-color: #f8f8f8; /* Background color for navigation items */
 }
 
 body {
-    font-family: Arial, sans-serif; /* Cambia la fuente según sea necesario */
+    font-family: Arial, sans-serif; /* Change font as needed */
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Color de fondo general */
-    color: #333; /* Color de texto predeterminado */
+    background-color: #fff; /* General background color */
+    color: #333; /* Default text color */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color); /* Color de texto para títulos */
+    color: var(--primary-color); /* Text color for headings */
 }
 
 p {
-    color: #555; /* Color de texto para párrafos */
+    color: #555; /* Text color for paragraphs */
 }
 
 header {
-    background-color: var(--accent1-color); /* Color de fondo del encabezado */
-    padding: 10px;
-    text-align: left;
+    background: linear-gradient(to bottom, #FE5F55, #F0B67F);
+    background-color: var(--accent1-color); /* Header background color */
+    padding: 20px;
+    text-align: center; /* Center the content horizontally */
+    display: grid; /* Use Grid for layout */
+    grid-template-columns: auto 1fr auto; /* Three columns, logo-auto-title-navigation */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    justify-self: start; /* Aligns logo to the start of the grid cell */
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     max-width: 100%;
     height: auto;
+    margin-right: 10px; /* Add some right margin */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation horizontally */
+    align-items: center; /* Center items vertically */
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+    border: 4px solid var(--border-color); /* Increase border width */
+    padding: 10px 20px; /* Add padding inside each item */
+    background-color: var(--background-color); /* Background color for navigation items */
+}
+
+nav ul li a {
+    font-size: 16px; /* Increase font size */
 }
 
 .hero {
@@ -60,16 +86,16 @@ nav ul li {
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo del contenido del héroe con opacidad */
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Hero content background with opacity */
+    padding: 10px;
     max-width: 80%;
 }
 
 .hero-content h1 {
-    color: var(--secondary-color); /* Color de texto del título del héroe */
+    color: var(--secondary-color); /* Hero title text color */
 }
 
 .hero-content article {
@@ -78,20 +104,65 @@ nav ul li {
 
 .hero-content article img {
     float: right;
-    max-width: 40%; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-left: 20px; /* Espaciado entre la imagen y el texto */
+    max-width: 40%; /* Adjust image size as needed */
+    margin-left: 20px; /* Spacing between image and text */
 }
 
+/* Adding styles for the footer */
 footer {
-    background-color: var(--accent1-color); /* Color de fondo del pie de página */
-    padding: 20px;
-    text-align: center;
+    display: flex; /* Utilize Flexbox for horizontal layout */
+    justify-content: flex-end; /* Distribute items evenly along the container */
+    align-items: center; /* Center items vertically */
+    background-color: var(--accent1-color); /* Color of the footer */
+    padding: 20px; /* Padding for spacing */
+}
+
+footer p {
+    margin: 0 320px; /* Remove default margin */
+    text-align: center; /* Center the text */
 }
 
 footer img {
-    margin: 0 5px; /* Espaciado entre los iconos de redes sociales */
+    margin-left: 10px; /* Add some space between the social icons */
+    align-self: flex-end; /* Align social icons to the bottom */
 }
+
 section img {
-    width: 800px; /* Establecer el ancho deseado */
-    height: auto; /* Mantener la proporción de la imagen */
+    width: 800px; /* Set desired width */
+    height: auto; /* Maintain image aspect ratio */
+}
+/* Adding styles for the adventures section */
+.adventures {
+    display: flex; /* Utilize Flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute items evenly along the container */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.adventures figure {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center the content within the figure */
+}
+
+.adventures img {
+    max-width: 100%; /* Ensure images do not extend beyond their container */
+}
+
+.adventures figcaption {
+    text-align: center; /* Center the caption text */
+    margin-top: 10px; /* Add space between the image and the caption */
+}
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
+    position: relative;
+}
+
+h2::after {
+    content: ''; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Establece la posición absoluta para posicionar el pseudo-elemento debajo del título */
+    bottom: -5px; /* Coloca el pseudo-elemento 5px debajo del texto */
+    left: 50%; /* Coloca el pseudo-elemento en el centro horizontalmente */
+    transform: translateX(-50%); /* Centra el pseudo-elemento horizontalmente */
+    width: 50px; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: var(--primary-color); /* Color de la línea */
 }
