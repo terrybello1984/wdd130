@@ -166,3 +166,28 @@ h2::after {
     height: 2px; /* Grosor de la línea */
     background-color: var(--primary-color); /* Color de la línea */
 }
+
+/* Adding styles for the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px; /* Añade espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Agrega esquinas redondeadas al fondo */
+    background-color: #FE5F55; /* Color de fondo destacado */
+    color: #fff; /* Color de texto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave al cambio de color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #F0B67F; /* Cambia el color de fondo al pasar el cursor sobre el enlace */
+    color: #333;
+}
