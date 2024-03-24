@@ -131,6 +131,7 @@ section img {
     width: 800px; /* Set desired width */
     height: auto; /* Maintain image aspect ratio */
 }
+
 /* Adding styles for the adventures section */
 .adventures {
     display: flex; /* Utilize Flexbox for horizontal layout */
@@ -151,6 +152,7 @@ section img {
     text-align: center; /* Center the caption text */
     margin-top: 10px; /* Add space between the image and the caption */
 }
+
 h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
     position: relative;
@@ -162,9 +164,9 @@ h2::after {
     bottom: -5px; /* Position the pseudo-element 5px below the text */
     left: 50%; /* Position the pseudo-element horizontally centered */
     transform: translateX(-50%); /* Center the pseudo-element horizontally */
-    width: 50px; /* Line width */
-    height: 2px; /* Line thickness */
-    background-color: var(--primary-color); /* Line color */
+    width: 50px; /* Width of the line */
+    height: 2px; /* Thickness of the line */
+    background-color: var(--primary-color); /* Color of the line */
 }
 
 /* Adding styles for the navigation menu */
