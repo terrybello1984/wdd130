@@ -152,19 +152,19 @@ section img {
     margin-top: 10px; /* Add space between the image and the caption */
 }
 h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
     position: relative;
 }
 
 h2::after {
-    content: ''; /* Agrega contenido al pseudo-elemento */
-    position: absolute; /* Establece la posición absoluta para posicionar el pseudo-elemento debajo del título */
-    bottom: -5px; /* Coloca el pseudo-elemento 5px debajo del texto */
-    left: 50%; /* Coloca el pseudo-elemento en el centro horizontalmente */
-    transform: translateX(-50%); /* Centra el pseudo-elemento horizontalmente */
-    width: 50px; /* Ancho de la línea */
-    height: 2px; /* Grosor de la línea */
-    background-color: var(--primary-color); /* Color de la línea */
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Set absolute position to position the pseudo-element below the title */
+    bottom: -5px; /* Position the pseudo-element 5px below the text */
+    left: 50%; /* Position the pseudo-element horizontally centered */
+    transform: translateX(-50%); /* Center the pseudo-element horizontally */
+    width: 50px; /* Line width */
+    height: 2px; /* Line thickness */
+    background-color: var(--primary-color); /* Line color */
 }
 
 /* Adding styles for the navigation menu */
@@ -180,14 +180,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 5px 10px; /* Añade espacio alrededor del texto del enlace */
-    border-radius: 5px; /* Agrega esquinas redondeadas al fondo */
-    background-color: #FE5F55; /* Color de fondo destacado */
-    color: #fff; /* Color de texto */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave al cambio de color de fondo */
+    padding: 5px 10px; /* Add space around the link text */
+    border-radius: 5px; /* Add rounded corners to the background */
+    background-color: #FE5F55; /* Highlight background color */
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition to background color change */
 }
 
 nav ul li a:hover {
-    background-color: #F0B67F; /* Cambia el color de fondo al pasar el cursor sobre el enlace */
+    background-color: #F0B67F; /* Change background color on hover */
     color: #333;
 }
+
