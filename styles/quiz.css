@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Change background color of body to gray */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Change text color to a darker tone */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff; /* Change background color of form to white */
+    padding: 20px; /* Add some space around the form */
+    border-radius: 8px; /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Change color of question numbers to green */
+.question {
+    counter-reset: questionCounter;
+}
+
+.question label::marker {
+    color: #008000; /* Change color of numbers to green */
+    font-weight: bold;
+}
