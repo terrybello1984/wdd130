@@ -193,4 +193,118 @@ nav ul li a:hover {
     background-color: #F0B67F; /* Change background color on hover */
     color: #333;
 }
+/* Position the employee profiles section */
+.employee-profiles {
+    position: absolute;
+    top: 270px; /* Adjust as needed */
+    right: 80px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
+/* Margin between employee profiles */
+.employee-profile {
+    margin-bottom: 20px;
+}
+
+/* Styling for employee profile images */
+.profile-image {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Margin for the main content area */
+main {
+    margin-left: 20px;
+}
+
+/* Position and styling for the form container */
+.form-container {
+    position: absolute;
+    top: 320px; /* Adjust the distance from the top as needed */
+    right: 375px; /* Adjust the distance from the right as needed */
+    background-color: #f5f5f5; /* Background color */
+    padding: 10px; /* Internal padding */
+    border-radius: 10px; /* Rounded borders */
+    margin-top: 30px; /* Top margin */
+}
+
+/* Maximum width and centering for the form */
+.form-container form {
+    max-width: 600px; /* Maximum form width */
+    margin: 0 auto; /* Center the form horizontally */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Styling for form labels */
+.form-container label {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 5px; /* Bottom margin between options */
+}
+
+/* Styling for text inputs, email inputs, and text areas */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 96%; /* Full width */
+    padding: 5px; /* Internal padding */
+    margin-bottom: 5px; /* Bottom margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 10px; /* Rounded borders */
+}
+
+/* Styling for radio buttons */
+.form-container input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+/* Styling for radio button labels */
+.form-container input[type="radio"] + label {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 5px; /* Bottom margin */
+}
+
+/* Styling for radio button circle */
+.form-container input[type="radio"] + label:before {
+    content: ""; /* Empty content before the radio button */
+    display: inline-block; /* Display the radio button */
+    width: 20px; /* Width of the radio button */
+    height: 20px; /* Height of the radio button */
+    border-radius: 50%; /* Make the radio button circular */
+    border: 1px solid #ccc; /* Border of the radio button */
+    margin-right: 5px; /* Margin to the right of the radio button */
+}
+
+/* Styling for checked radio buttons */
+.form-container input[type="radio"]:checked + label:before {
+    background-color: #007bff; /* Background color of the selected radio button */
+}
+
+/* Styling for checkboxes */
+.form-container input[type="checkbox"] {
+    margin-top: 1px; /* Top margin */
+}
+
+/* Styling for submit button */
+.form-container input[type="submit"] {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Internal padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded borders */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover styling for submit button */
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Background color on hover */
+}
+
+.form-container h4 {
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
